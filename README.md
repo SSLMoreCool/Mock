@@ -1,31 +1,78 @@
-# Mock.js
-<!-- 模拟请求 & 模拟数据 -->
-[![Build Status](https://travis-ci.org/nuysoft/Mock.svg?branch=refactoring)](https://travis-ci.org/nuysoft/Mock)
+# 尚品汇 - Vue 电商平台
 
-<!-- [![Coverage Status](https://coveralls.io/repos/nuysoft/Mock/badge.png?branch=refactoring)](https://coveralls.io/r/nuysoft/Mock?branch=refactoring)
-[![NPM version](https://badge.fury.io/js/mockjs.svg)](http://badge.fury.io/js/mockjs)
-[![Bower version](https://badge.fury.io/bo/mockjs.svg)](http://badge.fury.io/bo/mockjs)
-[![Dependency Status](https://gemnasium.com/nuysoft/Mock.svg)](https://gemnasium.com/nuysoft/Mock)
-[![spm package](http://spmjs.io/badge/mockjs)](http://spmjs.io/package/mockjs) -->
+尚品汇是一个基于 Vue 3 + Vite 的前端电商平台项目，包含完整的购物流程。
 
-Mock.js is a simulation data generator to help the front-end to develop and prototype separate from the back-end progress and reduce some monotony particularly while writing automated tests.
+## 技术栈
 
-The official site: <http://mockjs.com>
+- **Vue 3** - 渐进式 JavaScript 框架
+- **Vue Router 4** - 前端路由管理
+- **Pinia** - 状态管理
+- **Axios** - HTTP 请求库
+- **Less** - CSS 预处理器
+- **Mock.js** - 数据模拟
+- **NProgress** - 页面加载进度条
+- **Vite** - 构建工具
 
-## Features
+## 功能模块
 
-* Generate simulated data according to the data template
-* Provide request/response mocking for ajax requests
-* ~~Generate simulated data according to HTML-based templates~~
+- 🏠 **首页** - 轮播图、商品分类导航、楼层展示、品牌推荐
+- 🔍 **搜索** - 商品搜索、筛选、排序、分页
+- 📦 **商品详情** - 图片浏览、规格选择、加入购物车
+- 🛒 **购物车** - 商品管理、数量修改、结算
+- 💳 **订单** - 地址选择、订单确认、在线支付
+- 👤 **个人中心** - 订单管理
+- 🔐 **登录/注册** - 用户认证
 
-This library is loosely inspired by Elijah Manor's post [Mocking
-Introduction](http://www.elijahmanor.com/2013/04/angry-birds-of-javascript-green-bird.html), [mennovanslooten/mockJSON](https://github.com/mennovanslooten/mockJSON), [appendto/jquery-mockjax](https://github.com/appendto/jquery-mockjax) and [victorquinn/chancejs](https://github.com/victorquinn/chancejs/).
+## 快速开始
 
-## Questions?
-If you have any questions, please feel free to ask through [New Issue](https://github.com/nuysoft/Mock/issues/new).
+```bash
+# 安装依赖
+npm install
 
-## Reporting an Issue
-Make sure the problem you're addressing is reproducible. Use <http://jsbin.com/> or <http://jsfiddle.net/> to provide a test page. Indicate what browsers the issue can be reproduced in. What version of Mock.js is the issue reproducible in. Is it reproducible after updating to the latest version?
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
+
+# 预览生产版本
+npm run preview
+```
+
+## 项目结构
+
+```
+src/
+├── api/            # API 接口封装
+├── assets/         # 静态资源
+├── components/     # 公共组件
+│   ├── Header/     # 头部导航
+│   ├── Footer/     # 底部信息
+│   ├── TypeNav/    # 三级分类导航
+│   └── Carousel/   # 轮播图组件
+├── mock/           # Mock 数据
+├── pages/          # 页面组件
+│   ├── Home/       # 首页
+│   ├── Search/     # 搜索页
+│   ├── Detail/     # 商品详情
+│   ├── ShopCart/   # 购物车
+│   ├── Trade/      # 订单确认
+│   ├── Pay/        # 支付页
+│   ├── Center/     # 个人中心
+│   ├── Login/      # 登录
+│   └── Register/   # 注册
+├── router/         # 路由配置
+├── store/          # Pinia 状态管理
+├── App.vue         # 根组件
+└── main.js         # 入口文件
+```
+
+## API 说明
+
+项目使用了两套请求方式：
+- **真实接口** (`/api`) - 代理到后端服务器 `gmall-h5-api.atguigu.cn`
+- **Mock 接口** (`/mock`) - 使用 Mock.js 模拟的本地数据（轮播图、楼层等）
 
 ## License
-Mock.js is available under the terms of the [MIT License](./LICENSE).
+
+[MIT](./LICENSE)

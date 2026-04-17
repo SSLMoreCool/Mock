@@ -1,9 +1,11 @@
-bak
+node_modules/
+dist/
 .DS_Store
+*.local
+.env
+.env.*
+!.env.example
 .*.swp
 .idea
-node_modules
-bower_components
 coverage
-PLAN.md
 npm-debug.log
