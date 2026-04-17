@@ -77,12 +77,14 @@ export default {
         return
       }
       this.countdown = 60
-      this.timer = setInterval(() => {
+      const timerId = setInterval(() => {
         this.countdown--
         if (this.countdown <= 0) {
-          clearInterval(this.timer)
+          clearInterval(timerId)
+          this.timer = null
         }
       }, 1000)
+      this.timer = timerId
     },
     handleRegister() {
       if (!this.phone) {

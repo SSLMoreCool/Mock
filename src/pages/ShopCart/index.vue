@@ -79,6 +79,7 @@ export default {
     }
   },
   computed: {
+    // Intentionally empty setter - toggling is handled by @change="toggleAll"
     allChecked: {
       get() {
         return this.cartList.length > 0 && this.cartList.every(item => item.checked)
