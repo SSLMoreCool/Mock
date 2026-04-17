@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "家用电器",
+    "keywords": ["节能补贴", "4K电视", "空气净化器", "IH电饭煲", "滚筒洗衣机", "电热水器"],
+    "imgUrl": "https://picsum.photos/1200/460?random=5",
+    "navList": [
+      {
+        "url": "#",
+        "text": "热门"
+      },
+      {
+        "url": "#",
+        "text": "大家电"
+      },
+      {
+        "url": "#",
+        "text": "生活电器"
+      },
+      {
+        "url": "#",
+        "text": "厨房电器"
+      }
+    ],
+    "carouselList": [
+      { "id": 1, "imgUrl": "https://picsum.photos/300/200?random=10" },
+      { "id": 2, "imgUrl": "https://picsum.photos/300/200?random=11" },
+      { "id": 3, "imgUrl": "https://picsum.photos/300/200?random=12" }
+    ],
+    "recommendList": [
+      "https://picsum.photos/200/200?random=20",
+      "https://picsum.photos/200/200?random=21",
+      "https://picsum.photos/200/200?random=22",
+      "https://picsum.photos/200/200?random=23",
+      "https://picsum.photos/200/200?random=24",
+      "https://picsum.photos/200/200?random=25",
+      "https://picsum.photos/200/200?random=26",
+      "https://picsum.photos/200/200?random=27"
+    ],
+    "bigImg": "https://picsum.photos/600/400?random=30"
+  },
+  {
+    "id": 2,
+    "name": "手机通讯",
+    "keywords": ["手机", "对讲机", "手机壳", "手机贴膜", "手机存储卡", "充电器"],
+    "imgUrl": "https://picsum.photos/1200/460?random=6",
+    "navList": [
+      {
+        "url": "#",
+        "text": "热门"
+      },
+      {
+        "url": "#",
+        "text": "手机"
+      },
+      {
+        "url": "#",
+        "text": "手机配件"
+      },
+      {
+        "url": "#",
+        "text": "运营商"
+      }
+    ],
+    "carouselList": [
+      { "id": 1, "imgUrl": "https://picsum.photos/300/200?random=13" },
+      { "id": 2, "imgUrl": "https://picsum.photos/300/200?random=14" },
+      { "id": 3, "imgUrl": "https://picsum.photos/300/200?random=15" }
+    ],
+    "recommendList": [
+      "https://picsum.photos/200/200?random=30",
+      "https://picsum.photos/200/200?random=31",
+      "https://picsum.photos/200/200?random=32",
+      "https://picsum.photos/200/200?random=33",
+      "https://picsum.photos/200/200?random=34",
+      "https://picsum.photos/200/200?random=35",
+      "https://picsum.photos/200/200?random=36",
+      "https://picsum.photos/200/200?random=37"
+    ],
+    "bigImg": "https://picsum.photos/600/400?random=31"
+  }
+]
